@@ -32,7 +32,7 @@ def main() -> None:
     assert mujoco.__version__ >= "3.1.0", "Please upgrade to mujoco 3.1.0 or later."
 
     # Load the model and data.
-    model = mujoco.MjModel.from_xml_path("assets/low_cost_robot_6dof/pick_place_cube.xml")
+    model = mujoco.MjModel.from_xml_path("assets/low_cost_robot_6dof/scene.xml")
     data = mujoco.MjData(model)
 
     # Enable gravity compensation. Set to 0.0 to disable.
